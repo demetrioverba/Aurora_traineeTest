@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="top-container">
+    <h1>Scroll Down</h1>
+    <p>Scroll down to see the sticky effect.</p>
+  </div>
+
+  <div class="header" id="myHeader">
+    <h2>My Header</h2>
+  </div>
+
+  <div class="content">
+    <h3>On Scroll Sticky Header</h3>
+    <p>The header will stick to the top when you reach its scroll position.</p>
+
+  </div>
+
+
+  <div class="bottom-container">
+
+    <div class="contInfo">
+      <ul class="contInfoBox">About Us
+        <li>Who we are</li>
+        <li>Our stores</li>
+        <li>Customer Reviews</li>
+      </ul>
+
+
+      <ul class="">Categories
+        <li>Women fashion</li>
+        <li>Accessories</li>
+        <li>Kids</li>
+      </ul>
+      <ul class="">Help
+        <li>Customer service</li>
+        <li>Size guide</li>
+        <li>Contact us</li>
+      </ul>
+      <ul class="">Payments & Delivery
+        <li>Purchase terms</li>
+        <li>Guarantee</li>
+      </ul>
+
+    </div>
+  </div>
+
+  </div>
+
+
+
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+$body-color: blue;
+
+body {
+  color: $body-color;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+.Group-1{
+  position: absolute;
+  left: 19.58%;
+  right: 70.28%;
+  top: 50.15%;
+  bottom: 19.24%;
+}
+.Group-2{
+  position: absolute;
+  left: 33.06%; 
+  right: 56.81%;
+  top: 50.15%;
+  bottom: 19.24%;
+}
+.Group-3{
+  position: absolute;
+  left: 45.97%;
+  right: 43.89%;
+  bottom: 19.24%;
+  top: 50.15%;
+}
+.Group-4{
+  position: absolute;
+height: 19px;
+left: 0%;
+right: 68.35%;
+top: calc(50% - 19px/2 - 16.5px);
+}
+.contInfo{
+  height: 197px;
+  width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+
+  
+  bottom: 0%;
+  background: #F7F7F7;
+}
+.bottom-container{
+
+
+}

@@ -2,75 +2,140 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="top-container">
+
+  <!--HEADER LINE - START-->
+
+
+  <div class="header_line">
+
+
+
+    <ul class="header_line-list">
+
+      <li class="header_line-item">
+        <a href="/" class="header_line-link"></a>
+      </li>
+
+
+      <li class="header_line-item">
+        <a href="/" class="header_line-link">We deliver Worldwide</a>
+      </li>
+
+      <li class="header_line-item">
+        <a href="/" class="header_line-link">
+          <i class="material-icons" style="font-size:14px; color: red">place</i>
+          Our stores
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!--HEADER LINE - END-->
+
+  <!-- MAIN-SECTION START -->
+
+  <main class="main">
+    <section class="intro">
+      <div class="header" id="myHeader">
+        <h2>My Header</h2>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <!-- MAIN-SECTION START -->
+
+
+  <!-- <div class="top-container">
     <h1>Scroll Down</h1>
     <p>Scroll down to see the sticky effect.</p>
-  </div>
+  </div> -->
 
-  <div class="header" id="myHeader">
-    <h2>My Header</h2>
-  </div>
+
+
+  <!--CONTENT START-->
 
   <div class="content">
-    <h3>On Scroll Sticky Header</h3>
-    <p>The header will stick to the top when you reach its scroll position.</p>
+
+    <form class="content_search-form">
+
+      <fieldset class="content_search-form-wrap">
+
+        <div class="content_text">New arrivals. Exclusive previews. First access to sales. Sign up to stay in the know.
+        </div>
+
+        <p class="search-form_info">
+          <input type="text" class="search-form_field" type="email" placeholder="Your email address">
+
+          <button type="submit" class="search-form_submit">Register</button>
+        </p>
+      </fieldset>
+    </form>
 
   </div>
 
+  <!--CONTENT END-->
 
-  <div class="bottom-container">
+
+
+  <div class="footer">
 
     <div class="contInfo">
-      <ul class="contInfoBox">About Us
+
+      <ul class="ul-no-bullets">
+        <li class="ul-header">About Us</li>
         <li>Who we are</li>
         <li>Our stores</li>
         <li>Customer Reviews</li>
       </ul>
 
-
-      <ul class="">Categories
+      <ul class="ul-no-bullets">
+        <li class="ul-header">Categories</li>
         <li>Women fashion</li>
         <li>Accessories</li>
         <li>Kids</li>
       </ul>
-      <ul class="">Help
+
+      <ul class="ul-no-bullets">
+        <li class="ul-header">Help</li>
         <li>Customer service</li>
         <li>Size guide</li>
         <li>Contact us</li>
       </ul>
-      <ul class="">Payments & Delivery
+
+      <ul class="ul-no-bullets">
+        <div class="ul-header">Payments & Delivery</div>
         <li>Purchase terms</li>
         <li>Guarantee</li>
       </ul>
 
+
+      <ul class="ul-no-bullets">
+        <li class="ul-header">Social</li>
+        <li>images</li>
+      </ul>
+
+
+
     </div>
+
+
   </div>
 
-  </div>
+  <div class="bottom-container">&#169; Copyright, Aurora 2020. All Rights reserved.</div>
 
 
-
-  <script>
-    window.onscroll = function () { myFunction() };
-
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-      } else {
-        header.classList.remove("sticky");
-      }
-    }
-  </script>
 
 </body>
 

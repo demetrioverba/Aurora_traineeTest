@@ -30,6 +30,11 @@ module.exports = {
                 exclude: /node_modules/,
                 use: ['style-loader', 'css-loader', 'sass-loader']
             },
+            {
+                test: /\.(png|jpg)$/,
+                include: path.join(__dirname, 'src/assets'),
+                loader: 'url-loader'
+            },
         ]
     }
 };

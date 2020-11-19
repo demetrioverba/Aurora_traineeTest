@@ -1,79 +1,63 @@
+@import 'fonts.scss';
+
+$page-width: 1440px;
+$main-color: #000000;
+$sub-color: #FFFFFF;
+
 body {
+  font-family: 'Poppins';;
   margin: 0;
   padding: 0;
 }
 a {
   text-decoration: none;
-  color: #000000;
+  color: $main-color;
 }
 
 /*HEADER LINE - START*/
 
-
 .header_line{
-  width: 1440px;
+  width: $page-width;
   height: 24px;
   top: 0px;
   background-color: rgb(255, 255, 255);
-
-  
 }
-
 .header_line-list{
-  
   display: flex;
   flex-wrap: wrap;
   margin: 0px;
-  
   justify-content: space-between;
 }
-
 .header_line-item{
   margin-right: 562px;
   list-style-type: none;
   margin-top: 4px;
   margin-bottom: 3px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
   line-height: 16px;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.8px;
-
-  color: #000000;
-
-  
+  color: $main-color;
 }
-
 .header_line-item:last-child{
   margin-right: 0;
   margin-top: 4px;
   margin-bottom: 3px;
   width: auto;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 15px;
-  /* identical to box height */
-
   text-align: right;
   letter-spacing: 0.0833333px;
-
-  color: #000000;
-
+  color: $main-color;
 }
 
-
 /*HEADER LINE - END*/
-
-
-
 
 
 /* STICKY-MENU START */
@@ -83,36 +67,26 @@ a {
   padding-left: 24px;
   padding-bottom: 0px;
   top: 0px;
-  
-
   background: linear-gradient(180deg, rgba(51, 51, 51, 0.225) 14.31%, rgba(27, 27, 27, 0.1175) 58.6%, rgba(0, 0, 0, 0.0001) 100%);
-  color: #FFFFFF;
+  color: $sub-color;
   mix-blend-mode: normal;
-
 }
-
-
-.pisun {
-  
+.navbar {
   width: 800px;
   list-style-type: none;
   margin: 0px;
   margin-bottom: 5px;
   padding: 20px 30px 0px 183px;
-  overflow: hidden;
-  
-  
+  overflow: hidden; 
 }
-
-.pisun li {
+.navbar li {
   float: left;
 }
-
-.pisun li a {
+.navbar li a {
   text-align: center;
   padding: 0px 0px 0px 31px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: $sub-color;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -121,29 +95,19 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   margin-left: 5px;
-
-  
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 }
-
 .header_menu-input{
   float: left;
   width: 551px;
   height: 48px;
   margin: 30px 0px 0px 250px;
-  // margin-left: 65px;
-  // margin-bottom: 0px;
-  // margin-top: 30px;
   padding: 3px;
-
   mix-blend-mode: normal;
-  
   border-radius: 3px 0px 0px 3px;
   border: 0px;
   background: rgba(247, 247, 247, 0.24);
-
 }
-
 .header_menu-input::placeholder{
   padding: 15px 400px 15px 15px;
   font-family: Poppins;
@@ -152,34 +116,27 @@ a {
   font-size: 11px;
   line-height: 16px;
   letter-spacing: 0.8px;
-  color: #FFFFFF;
+  color: $sub-color;
 }
-
 .header_menu-submit{
   float: left;
   width: 40px;
   height: 54px;
-  
   margin-bottom: 0px;
   margin-top: 30px;
   padding: 3px;
-
   mix-blend-mode: normal;
-  
   border-radius: 0px 3px 3px 0px;
   border: 0px;
-
   background: rgba(247, 247, 247, 0.24);
 }
 .subIcon{
   color: rgba(0, 0, 0, 0.0001);
   width: 16px;
   height: 16px;
-
   background: url(../assets/searchIcon.png) no-repeat center;
   background-size: cover;
 }
-
 .signIn{
   width: 120px;
   height: 15px;
@@ -187,18 +144,14 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   list-style-type: none;
-
-  
 }
-
-
 .signIn li a{
   margin: 0px;
   height: 13px;
   text-align: center;
   padding: 0px 5px 0px px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: $sub-color;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -206,108 +159,96 @@ a {
   line-height: 16px;
   letter-spacing: 1px;
   margin-left: 0px;
-  // background-color: aqua;
-
-  
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
 }
 .signIn .reg{
   height: 8px;
-  border-left: 2px solid #FFFFFF;
+  border-left: 2px solid $sub-color;
   padding-left: 7px;
   padding-bottom: 6px;
 }
-
 .header_wrapper{
-
   display: grid;
-  
   grid-template-columns: auto auto auto;
   grid-gap: 0px;
   justify-content: space-between;
-  
-    
   padding: 0px;
-  
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 38px;
   line-height: 57px;
-  /* identical to box height */
   letter-spacing: 0.95px;
-
 }
-
-
-
-
-
 .header:hover{
   height: 140px;
   padding-left: 24px;
   padding-bottom: 0px;
-  background: #FFFFFF;
-  color: #000000;;
- 
-  /* identical to box height */
-
+  background: $sub-color;
+  color: $main-color;
   letter-spacing: 0.95px;
-  
 }
 .header:hover a, {
   color: #000000;
 }
 .header:hover ::placeholder{
-  color: #000000;
+  color: $main-color;
 }
 .header:hover .subIcon{
-  color: #000000;
+  background: url(../assets/searchIconBlack.png) no-repeat center;
+  background-size: cover;
+}
+.header:hover .header_menu-input{
+  border-radius: 3px 0px 0px 3px;
+  border: 1px solid #E1E0E1;
+  background: rgba(247, 247, 247, 0.24);
+  border-right: none;
+}
+.header:hover .header_menu-submit{
+  height: 56px;
+  border: 1px solid #E1E0E1;
+  border-radius: 0px 3px 3px 0px;
+  border-left: none;
 }
 
+// .sticky {
+//   position: fixed;
+//   opacity: 1;
+//   top: 0;
+//   width: 1440px;
+//   background-color: white;
+//   color: #000000;
+// }
 
-
-.sticky {
-  position: fixed;
-  opacity: 1;
-  top: 0;
-  width: 1420px;
-  // background-color: #E1E0E1;
-}
-
-.sticky + .content {
-  padding-top: 102px;
+// .sticky + .content {
+//   padding-top: 102px;
   
-}
+// }
 
 .header_logo{
   width: 141px;
   height: 57px;
   margin-top: 16px;
   padding-top: 10px;
-
 }
 
-
-
-
 /* STICKY-MENU END */
+
 
 /* MAIN SECTION - START */
 
 .intro{
-  width: 1440px;
+  width: $page-width;
   height: 756px;
   position: relative;
   background: url(../assets/first.jpg) no-repeat center;
   background-size: cover;
-
 }
-
-
 
 /* MAIN SECTION - END */
 
+
+/* BOTTOM-MENU - START */
 
 .contInfo{
   height: 197px;
@@ -317,19 +258,12 @@ a {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
-
   display: grid;
   height: auto;
-  
   grid-template-columns: auto auto auto auto auto;
   grid-gap: 0px;
-  
-
 }
-
-
 .ul-header {
-  
   left: 0%;
   right: 52.05%;
   top: calc(50% - 19px/2 - 43px);
@@ -339,14 +273,10 @@ a {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 1.16364px;
-  color: #000000;
-
+  color: $main-color;
   margin-bottom: 17px;
   margin-top: 0%;
-
-
 }
-
 li {
   height: 19px;
   left: 0%;
@@ -357,74 +287,100 @@ li {
   font-weight: normal;
   font-size: 12px;
   line-height: 19px;
-  /* identical to box height, or 158% */
   letter-spacing: 0.1px;
-  color: #000000;
-
+  color: $main-color;
   margin-top: 0px;
   margin-bottom: 6px;
 }
-
 .ul-no-bullets {
-  width: 146px;
+  width: 150px;
   margin-left: 5px;
   list-style-type: none;
   padding-right: 0px;
 }
-
 .footer {
   width: 1040px;
   padding: 0px 200px 0px 200px;
   background: #F7F7F7;
-
+}
+.insta{
+  float: left;
+  margin: 0px;
+  margin-right: 16px;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  background: url("/src/assets/insta.png") no-repeat;
+}
+.twitter{
+  float: left;
+  margin-right: 16px;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  background: url("/src/assets/twitter.png") no-repeat;
+}
+.snapchat{
+  float: left;
+  margin-right: 16px;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  background: url("/src/assets/snapchat.png") no-repeat;
+}
+.facebook{
+  float: left;
+  margin-right: 10px;
+  padding: 0px;
+  width: 16px;
+  height: 16px;
+  background: url("/src/assets/facebook.png") no-repeat;
+}
+.youtube{
+  float: left;
+  margin-right: 0px;
+  padding: 0px;
+  width: 20px;
+  height: 16px;
+  background: url("/src/assets/youtube.png") no-repeat;
 }
 
-
-
+/* BOTTOM-MENU - END */
 
 
 /* CONTENT - START */
 
 .content-container{
-  max-width: 1440px;
+  max-width: $page-width;
   height: auto;
   margin-bottom: 0px;
   padding: 20px 0px 20px 0px;
-  
-  background: #FFFFFF;
-  
+  background: $sub-color;
   position:absolute;
   bottom: 0px;                           
   left: 0px;
   right: 0px;
 }
-.content_search-form{
-  
-  
-}
 .content_search-form-wrap{
-  
   width: 445px;
   height: 82px;
   margin: 0 auto;
-  
   padding: 0px 0px 0px 0px;
   display: block;
-  background: #FFFFFF;
+  background: $sub-color;
   border: 0px;
 }
 .content_text{
   max-width: 439px;
   margin-bottom: 14px;
-  font-family: Poppins;
+  font-family: 'poppins-regular';
   font-size: 12px;
   font-style: normal;
   font-weight: normal;
   line-height: 18px;
   letter-spacing: 0.872727px;
-  color: #000000;
+  color: $main-color;
 }
-
 .search-form_field{
   width: 334px;
   height: 32px;
@@ -451,7 +407,6 @@ li {
   letter-spacing: 0.8px;
   color: #4A4A4A;
 }
-
 .search-form_submit{
   width: 94px;
   height: 32px;
@@ -460,7 +415,7 @@ li {
   margin-left: 12px;
   margin-right: 0px;
   border: 0px;
-  background: #000000;
+  background: $main-color;
   border-radius: 3px;
   font-family: Poppins;
   font-style: normal;
@@ -470,15 +425,13 @@ li {
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: $sub-color;
 }
-
 .search-form_info{
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
-
 }
 
 /* CONTENT - END */
@@ -488,26 +441,14 @@ li {
 
 .hello_text{
   height: 90px;
-  width: 787px;
-  // left: 327px;
-  // top: 344px;
-  padding: 170px 326px 346px 326px;
-  text-align: center;
+  padding: 180px 326px 346px 320px;
   font-family: Poppins;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 60px;
   line-height: 90px;
-  /* identical to box height */
-  color: #FFFFFF;
- 
-
-
-
-
+  color: $sub-color;
 }
-
-
 
 /*HELLO - START*/
 
@@ -515,20 +456,17 @@ li {
 /* BOTTOM-LINE - START */
 
 .bottom-container{
-  width: 1440px;
+  width: $page-width;
   bottom: 0%;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 9px;
   line-height: 13px;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.5px;
   background: #F7F7F7;
-  color: #000000;
+  color: $main-color;
 }
 
 /* BOTTOM-LINE - END */

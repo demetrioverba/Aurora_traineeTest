@@ -35,6 +35,10 @@ module.exports = {
                 include: path.join(__dirname, 'src/assets'),
                 loader: 'url-loader'
             },
+            {
+                test: /\.(ttf|otf|eot|woff|woff2)$/,
+                use: ['file-loader']
+            },
         ]
     }
 };

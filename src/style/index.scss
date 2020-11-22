@@ -1,18 +1,6 @@
-@import 'fonts.scss';
 
-$page-width: 1440px;
-$main-color: #000000;
-$sub-color: #FFFFFF;
-
-body {
-  font-family: 'Poppins';;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-  color: $main-color;
-}
+@import 'fonts';
+@import 'hover';
 
 /*HEADER LINE - START*/
 
@@ -20,7 +8,7 @@ a {
   width: $page-width;
   height: 24px;
   top: 0px;
-  background-color: rgb(255, 255, 255);
+  background-color: $sub-color;
 }
 .header_line-list{
   display: flex;
@@ -41,20 +29,20 @@ a {
   text-align: center;
   letter-spacing: 0.8px;
   color: $main-color;
-}
-.header_line-item:last-child{
-  margin-right: 0;
-  margin-top: 4px;
-  margin-bottom: 3px;
-  width: auto;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 15px;
-  text-align: right;
-  letter-spacing: 0.0833333px;
-  color: $main-color;
+  &:last-child{
+    margin-right: 0;
+    margin-top: 4px;
+    margin-bottom: 3px;
+    width: auto;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: right;
+    letter-spacing: 0.0833333px;
+    color: $main-color;
+  }
 }
 
 /*HEADER LINE - END*/
@@ -70,6 +58,43 @@ a {
   background: linear-gradient(180deg, rgba(51, 51, 51, 0.225) 14.31%, rgba(27, 27, 27, 0.1175) 58.6%, rgba(0, 0, 0, 0.0001) 100%);
   color: $sub-color;
   mix-blend-mode: normal;
+  &:hover{
+    height: 140px;
+    padding-left: 24px;
+    padding-bottom: 0px;
+    background: $sub-color;
+    color: $main-color;
+    letter-spacing: 0.95px;
+    a {
+      color: $main-color;
+    }
+    .subIcon{
+      background: url(../assets/searchIconBlack.png) no-repeat  center;
+      background-size: cover;
+    }
+    .header_menu-input{
+      border-radius: 3px 0px 0px 3px;
+      border: 1px solid #E1E0E1;
+      background: rgba(247, 247, 247, 0.24);
+      border-right: none;
+      outline: none;
+      &::placeholder{
+        color: $main-color;
+      }
+      // &:focus .header_menu-submit{
+      //   border: 5px blue;
+        // background-color: red;
+        // border: none;
+        // outline: none;
+      // }
+    }
+    .header_menu-submit{
+      height: 56px;
+      border: 1px solid #E1E0E1;
+      border-radius: 0px 3px 3px 0px;
+      border-left: none;
+    }
+  }
 }
 .navbar {
   width: 800px;
@@ -78,24 +103,24 @@ a {
   margin-bottom: 5px;
   padding: 20px 30px 0px 183px;
   overflow: hidden; 
-}
-.navbar li {
-  float: left;
-}
-.navbar li a {
-  text-align: center;
-  padding: 0px 0px 0px 31px;
-  text-decoration: none;
-  color: $sub-color;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 19px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-left: 5px;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+   li {
+    float: left;
+    a {
+      text-align: center;
+      padding: 0px 0px 0px 31px;
+      text-decoration: none;
+      color: $sub-color;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 19px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-left: 5px;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+    }
+  }
 }
 .header_menu-input{
   float: left;
@@ -107,16 +132,16 @@ a {
   border-radius: 3px 0px 0px 3px;
   border: 0px;
   background: rgba(247, 247, 247, 0.24);
-}
-.header_menu-input::placeholder{
-  padding: 15px 400px 15px 15px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 16px;
-  letter-spacing: 0.8px;
-  color: $sub-color;
+  &::placeholder{
+    padding: 15px 400px 15px 15px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: $sub-color;
+  }
 }
 .header_menu-submit{
   float: left;
@@ -144,28 +169,28 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   list-style-type: none;
-}
-.signIn li a{
-  margin: 0px;
-  height: 13px;
-  text-align: center;
-  padding: 0px 5px 0px px;
-  text-decoration: none;
-  color: $sub-color;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 16px;
-  letter-spacing: 1px;
-  margin-left: 0px;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
-}
-.signIn .reg{
-  height: 8px;
-  border-left: 2px solid $sub-color;
-  padding-left: 7px;
-  padding-bottom: 6px;
+  & li a{
+    margin: 0px;
+    height: 13px;
+    text-align: center;
+    padding: 0px 5px 0px px;
+    text-decoration: none;
+    color: $sub-color;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-left: 0px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.12);
+  }
+  & .reg{
+    height: 8px;
+    border-left: 2px solid $sub-color;
+    padding-left: 7px;
+    padding-bottom: 6px;
+  }
 }
 .header_wrapper{
   display: grid;
@@ -180,51 +205,17 @@ a {
   line-height: 57px;
   letter-spacing: 0.95px;
 }
-.header:hover{
-  height: 140px;
-  padding-left: 24px;
-  padding-bottom: 0px;
-  background: $sub-color;
-  color: $main-color;
-  letter-spacing: 0.95px;
-}
-.header:hover a, {
-  color: #000000;
-}
-.header:hover ::placeholder{
-  color: $main-color;
-}
-.header:hover .subIcon{
-  background: url(../assets/searchIconBlack.png) no-repeat center;
-  background-size: cover;
-}
-.header:hover .header_menu-input{
-  border-radius: 3px 0px 0px 3px;
-  border: 1px solid #E1E0E1;
-  background: rgba(247, 247, 247, 0.24);
-  border-right: none;
-}
-.header:hover .header_menu-submit{
-  height: 56px;
-  border: 1px solid #E1E0E1;
-  border-radius: 0px 3px 3px 0px;
-  border-left: none;
-}
-
-// .sticky {
-//   position: fixed;
+  // .sticky {
+  //   position: fixed;
 //   opacity: 1;
 //   top: 0;
 //   width: 1440px;
 //   background-color: white;
 //   color: #000000;
 // }
-
 // .sticky + .content {
 //   padding-top: 102px;
-  
-// }
-
+  // }
 .header_logo{
   width: 141px;
   height: 57px;
@@ -397,15 +388,15 @@ li {
   line-height: 16px;
   letter-spacing: 0.8px;
   color: #4A4A4A;
-}
-.search-form_field::placeholder{
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 16px;
-  letter-spacing: 0.8px;
-  color: #4A4A4A;
+  &::placeholder{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #4A4A4A;
+  }
 }
 .search-form_submit{
   width: 94px;

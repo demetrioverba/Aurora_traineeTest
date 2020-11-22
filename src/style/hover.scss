@@ -1,0 +1,13 @@
+$page-width: 1440px;
+$main-color: #000000;
+$sub-color: #FFFFFF;
+
+body {
+  font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: $main-color;
+}

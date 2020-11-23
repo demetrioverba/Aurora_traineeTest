@@ -78,15 +78,15 @@
       background: rgba(247, 247, 247, 0.24);
       border-right: none;
       outline: none;
+      color: $sub-color;
       &::placeholder{
         color: $main-color;
       }
-      // &:focus .header_menu-submit{
-      //   border: 5px blue;
-        // background-color: red;
-        // border: none;
-        // outline: none;
-      // }
+      &:focus{
+        border: 1px solid #E1E0E1;
+        color: $main-color;
+        border-right: none;
+      }      
     }
     .header_menu-submit{
       height: 56px;
@@ -140,6 +140,10 @@
     font-size: 11px;
     line-height: 16px;
     letter-spacing: 0.8px;
+    color: $sub-color;
+  }
+  &:focus{
+    outline: none;
     color: $sub-color;
   }
 }

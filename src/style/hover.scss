@@ -1,11 +1,17 @@
+
 $page-width: 1440px;
 $main-color: #000000;
 $sub-color: #FFFFFF;
 
-body {
+ 
+html, body, div, ul, li {
   font-family: 'Poppins';
   margin: 0;
   padding: 0;
+  max-width: $page-width;
+  
+  
+
 }
 a {
   text-decoration: none;
@@ -15,4 +21,13 @@ img {
   max-width: 100%;
   height: auto;
 }
-     
+// div{
+//   padding: 0;
+//   margin: 0;
+// }
+ html{
+    box-sizing: border-box;
+  }
+  *, *::before, *::after{
+    box-sizing: inherit;
+  }     

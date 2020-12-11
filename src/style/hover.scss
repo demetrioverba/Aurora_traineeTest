@@ -9,9 +9,11 @@ html, body, div, ul, li {
   margin: 0;
   padding: 0;
   max-width: $page-width;
-  
-  
+ 
 
+}
+html{
+  height: 100%;
 }
 a {
   text-decoration: none;
@@ -23,7 +25,8 @@ img {
 }
 
  html{
-    box-sizing: border-box;
+   //height: 100vh;
+  box-sizing: border-box;
   }
   *, *::before, *::after{
     box-sizing: inherit;
